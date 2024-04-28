@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<meta name=viewport" content="Contact="width=device-width, initial-scale=1">
+<tittle></tittle>
+
+</head>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+background:rgb(44, 93, 95);
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height:100vh;
+flex-direction:column;
+}
+#container{
+    color: whitesmoke;
+    border: 1px solid rgba(0,0,0.9);
+    background: rgba(0,0,0.9);
+    padding: 20px;
+
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+
+}
+.digit{
+    font-size: 100px;
+    font-weight:bold;
+}
+.txt{
+    font-size:20px;
+    font-weight: bold;
+}
+#btn-container{
+    text-align: center;
+    margin-top: 30px;
+
+}
+.btn{
+    padding: 10px 30px;
+font-size: 20px;
+margin: 0px 10px;
+border: 0px;
+cursor: pointer;
+color:whitesmoke;
+
+}
+#start{
+background:red ;
+
+}
+#stop{
+background: green;
+}
+#reset{
+background: blue;
+}
+h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+    
+}
+</style>
+<body>
+    <h1>Stopwatch</h1>
+    <div id="container">
+        
+        <div class="time">
+<span class="digit" id="hr">00</span>
+<span class="txt" >Hr</span>
+<span class="digit" id="min">00</span>
+<span class="txt">Min</span>
+<span class="digit" id="sec">00</span>
+<span class="txt">Sec</span>
+<span class="digit" id="count">00</span>
+
+        </div>
+    </div>
+<div id="btn-container">
+<button class=btn id="start" onclick="start()">Start</button>
+<button class=btn id="stop" onclick="stop()">Stop</button>
+<button class=btn id="reset" onclick="reset()">Reset</button>
+</div>
+
+
+<script src="watch.js"></script>
+
+</body>
+</html>
